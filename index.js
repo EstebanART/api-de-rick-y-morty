@@ -2,9 +2,9 @@ function getCharacters(done) {
   
     const results = fetch("https://rickandmortyapi.com/api/character");
 
-    results 
-      .then(Response => Response.json)
-      .then(data => {
+    results
+    .then(Response => Response.json)
+    .then(data => {
         done(data)
     });
 
